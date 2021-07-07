@@ -4,10 +4,10 @@
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
 % \def\mainfontface{Times New Roman}
-\def\mainfontface{Calibri}
+\def\mainfontface{Ubuntu}
 
-\DeclareOption{calibri}{%
-  \def\mainfontface{Calibri}
+\DeclareOption{Ubuntu}{%
+  \def\mainfontface{Ubuntu}
 }
 
 \ProcessOptions\relax
