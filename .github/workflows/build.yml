@@ -11,6 +11,4 @@ jobs:
       - name: Generate PDF
         uses: dante-ev/latex-action@latest
         with:
-          root_file: resume.tex
-          compiler: lualatex
-          args: -interaction=nonstopmode -shell-escape
+          entrypoint: ./run.sh
