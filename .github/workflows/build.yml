@@ -7,10 +7,11 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Install fonts
+        run: sudo add-apt-repository multiverse
         run: sudo apt-get install ttf-mscorefonts-installer
+        run: sudo fc-cache -f -v
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
           latexmk_use_lualatex: true
-
