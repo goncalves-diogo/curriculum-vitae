@@ -1,13 +1,11 @@
-
 \ProvidesClass{mcdowellcv}[2017/06/18 v1.2.0 McDowell CV class]
 
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
-% \def\mainfontface{Times New Roman}
-\def\mainfontface{Ubuntu}
+\def\mainfontface{Times New Roman}
 
-\DeclareOption{Ubuntu}{%
-  \def\mainfontface{Ubuntu}
+\DeclareOption{calibri}{%
+  \def\mainfontface{Calibri}
 }
 
 \ProcessOptions\relax
