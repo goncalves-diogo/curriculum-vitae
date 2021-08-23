@@ -19,7 +19,8 @@ jobs:
               update-ms-fonts
               fc-cache -f
       - name: Generate JPG from PDF
-        run: sudo apt-get install poppler-utils && pdftoppm resume.pdf resume.jpg -png
+        # run: sudo apt-get install poppler-utils && pdftoppm resume.pdf resume.jpg -png
+        run: sudo apt-get install imagestick && convert -density 300 -quality 100 resume.pdf resume.jpg
 
       - name: Push PDF to repo
         uses: stefanzweifel/git-auto-commit-action@v4
