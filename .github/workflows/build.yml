@@ -4,6 +4,10 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
+      - name: Remove File
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: ./resume-1.png
       - name: Set up Git repository
         uses: actions/checkout@v2
         with:
