@@ -43,3 +43,8 @@ In order to contribute to this repo follow these steps.
 ## McDowell CV
 McDowell CV is a LuaLaTeX class for building neat and space-efficient CVs using the design originally proposed by Gayle L. McDowell at
 http://www.careercup.com/resume
+
+## Resources
+
+[Harvard Action verbs](https://hls.harvard.edu/dept/opia/job-search-toolkit/action-verbs/)
+
