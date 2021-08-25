@@ -1,29 +1,45 @@
-# McDowell CV
-McDowell CV is a LuaLaTeX class for building neat and space-efficient CVs using the design originally proposed by Gayle L. McDowell at 
-http://www.careercup.com/resume. 
+# Curriculum Vitae
 
-The class is based on `article` class. The paper format is set to U.S. letterpaper by default. A template showing an example usage of the class is included.
+This is my personal Curriculum Vitae. Feel free to take everything in this repo
 
-## Screenshot
-<img src="https://github.com/dnl-blkv/mcdowell-cv/blob/master/McDowell_CV.png" width="240px"/>
+## File structure
 
-## Use Cases
-- A great tool making it easy to build CVs: https://latexresu.me/.
+```
+.
++-- mcdowellcv.cls
++-- resume.tex
++-- .github/workflows
+|   +-- build.yml
++-- resume.pdf
++-- resume-1.png
 
-## Class Options
- - `calibri` - sets calibri as the main font. Otherwise the default font is Times New Roman since version 1.1.0.
+```
 
-## Commands
-The class features the following commands:
- - `\name{name}` - defines the applicant's name to be printed by `\printheader`.
- - `\address{address}` - defines the applicant's address to be printed by `\printheader`.
- - `\contacts{contacts}` - defines the applicant's contacts to be printed by `\printheader`.
- - `\makecvheader` - prints the CV header consisting of the name (see the `\name` command), address (see the `\address` command) and contacts (see the `\contacts` command).
- 
-## Environments
- - `\begin{cvsection}{sectionname}` - prints a section with a header consisting of the name in bold small caps and a page-wide horizontal line below.
- - `\begin{cvsubsection}[linesnum]{left}{center}{right}{content}` - prints a subsection with header consisting of the `left`, `center` and `right` titles. The optional `linesnum` argument defines the amount of lines in the header. The argument only affects the vertical spacing between the environment header and content thus eliminating the effect of *tabu* package vertical spacing bug.
+1. mcdowellcv - Cls file containing all the formating for the latex file.
+2. resume.tex - Latex file where my resume is written.
+3. build.yml - Contains the Github action to generate a new PDF and a new resume-1.png everytime something is pushed into Github.
+4. resume.pdf - My resume compiled into PDF.
+5. resume-1.png - My resume in PNG generated from PDF. This is used in my personal [website](http://goncalves-diogo.me).
 
-## Build Instructions
-- Make sure `lualatex` (see http://www.luatex.org/download.html) is installed on your machine and is available in the terminal or a command line client of your choice.
-- In the terminal or a command line client of your choice, go to the folder containing `McDowell_CV_Template.tex` and `mcdowellcv.cls`, and run the following command: `lualatex McDowell_CV_Template.tex`.
+## Usage
+
+In order to use this template follow these steps.
+
+1. Fork the repository into your own repository.
+2. Change the content of the resume.tex for your own.
+3. Push the code into Github and everything should work out of the box.
+
+(NOTE: In case you wish to generate resume-1.png you may need to remove it manually, still working on it)
+
+
+## Contributing
+
+In order to contribute to this repo follow these steps.
+
+1. Fork the repository into your own repository.
+2. Make the changes you consider relevant.
+3. Create a Pull-request. I will review it and approve it.
+
+## McDowell CV
+McDowell CV is a LuaLaTeX class for building neat and space-efficient CVs using the design originally proposed by Gayle L. McDowell at
+http://www.careercup.com/resume
