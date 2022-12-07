@@ -1,81 +1,87 @@
 \documentclass[]{mcdowellcv}
 
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 \name{
     Diogo Gonçalves
 }
-\address{
-    Braga, Portugal
-}
+
 \contacts{
-    +351 933777932
-    \linebreak
     diogo.goncaalves@gmail.com
+    \linebreak
+    github.com/goncalves-diogo
     \linebreak
     goncalves-diogo.github.io
 }
 
 \begin{document}
 
-	% Print the header
 	\makeheader
-	
-	\begin{cvsection}{Education}
+    
+    \begin{cvsection}{Education}
 		\begin{cvsubsection}{University of Minho}{}{October 2016 -- April 2022}
 			\begin{itemize}
-                \item Master’s in Software Engineering (spec in Computer Graphics and Parallel \& Distributed Computing).
-                \item Bachelor's in Software Engineering, July 2019.
+                \item Master’s in Software Engineering (specialized in Computer Graphics and Parallel \& Distributed Computing)
+                \item Bachelor's in Software Engineering
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-	% Print the content
+ 
 	\begin{cvsection}{Employment}
 		\begin{cvsubsection}{Bsolus}{}{October 2020 -- November 2021}
 			Software Engineer
 			\begin{itemize}
-                \item Designed and developed a Marketing Automation platform based on a microservices architecture with horizontal scalability. Developed the CI/CD pipeline integrating with the AWS.
-                \item Maintained E-commerce platforms.
-                \item Techonologies utilized: NestJs, TypeScript, Docker, SQL, MongoDB, Terraform, GCP, Bitbucket, Jira, Git.
+                \item Architected a Marketing Automation platform based on \href{https://repositorium.sdum.uminho.pt/handle/1822/80045}{state-of-the-art} micro-service patterns
+                \item Created CI/CD pipelines to deploy code base to infrastructure using Bitbucket Pipelines
+                \item Implemented the designed architecture using NestJs, MongoDB, and Docker
+                \item Increased uptime to 99.9\% after automating the horizontal micro-services scaling
+                \item Decreased development time by creating a project-specific testing framework
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 
 	\begin{cvsection}{Technical Experience}
-		\begin{cvsubsection}{Projects}{}{}
+		 \begin{cvsubsection}{Projects}{}{}
 			\begin{itemize}
-				\item \textbf{Cactus3D} | C++, OpenGL, CMake, ImGui. 
-				Developed a rudimentary real-time 3D engine. Configurable elements include camera, light, and model via XML file.
-				\item \textbf{Ray tracer} | C++, CMake.
-				Implemented Ray tracing algorithms in C++ and CUDA, and optimized the implementation by adding features such as Russian roulette, Parallel BBVH, and multithreading.
-		               	\item \textbf{Interactive Wind} | C++, GLSL.
-				Developed a real-time heuristic wind simulation tested on a procedurally generated grass field. The focus of the project was to research known implementations of wind interaction with multiple objects and combine them into an immersive real-time solution.
-                		\item \textbf{Procedural Terrain Generation} | C++, GLSL.
-				Developed a real-time procedural terrain generator using simplex noise. The focus of the project was to research terrain generation implementations and develop a natural-looking terrain scene.
-
+				\item \href{https://github.com/goncalves-diogo/cactus3D}{\textbf{Cactus3D}} [ C++, OpenGL, CMake, ImGui]
+                    \begin{itemize}
+                        \item Developed a rudimentary real-time 3D engine
+                        \item Created cross-platform make system with CMake with git integration for ImGui, Assimp, and STB
+                        \item Scene configuration via XML with options for camera, light, and model
+                    \end{itemize}
+				\item \href{https://github.com/goncalves-diogo/PathTracer}{\textbf{Ray tracer}} [C++, CMake]
+                    \begin{itemize}
+                        \item Developed a simple Ray tracing based renderer
+                        \item Optimized the solution by implementing Russian Roulette and BBVH
+                        \item Decreased render time by creating a per-row thread render
+                    \end{itemize}	
+		        \item \href{https://github.com/maacarvalho/interactive-wind}{\textbf{Interactive Wind}} [GLSL]
+                  \begin{itemize}
+                      \item Developed a real-time heuristic wind simulation tested on a procedurally generated grass field
+                      \item Simulated the wind effect by applying the Navier-Stokes equations
+                      \item Implemented obstacles interaction with the voxelization of the objects
+                  \end{itemize}
+                \item \href{https://github.com/maacarvalho/procedural-terrain-generation}{\textbf{Procedural Terrain Generation}} [GLSL]
+                \begin{itemize}
+                    \item Developed a real-time procedural terrain generator using simplex noise
+                    \item Implemented tessellation detail levels dependent on camera position to increase realism and performance
+                    \item Developed a semi-random terrain height system utilizing simplex noise
+                \end{itemize}                
+                
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 
-	\begin{cvsection}{Technical skills}
+	\begin{cvsection}{Skills}
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item \textbf{Advanced} C++; C; Java;
-				\item \textbf{Intermediate} GLSL; Bash; Python;
-				\item \textbf{Basic} Vimscript; Lua; CUDA;
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-
-	\begin{cvsection}{Languages}
-		\begin{cvsubsection}{}{}{}
-			\begin{itemize}
-				\item Portuguese - Native speaker
-				\item English - C1 level
+				\item \textbf{Programming Languages} C++; C; Python; Typescript; Bash;
+				\item \textbf{Frameworks} OpenGL; Jest; NestJS;
+				\item \textbf{Developer Tools} Git; Agile; Jira; Docker; Postman; Confluence;
+			    \item \textbf{Languages} English (C1 level), Portuguese (Native)
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 \end{document}
-
 
