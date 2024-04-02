@@ -12,31 +12,40 @@
     \linebreak
     github.com/goncalves-diogo
     \linebreak
+    github.com/d-goncalves
+    \linebreak
     goncalves-diogo.github.io
 }
 
 \begin{document}
 
 	\makeheader
-    
-    \begin{cvsection}{Education}
-		\begin{cvsubsection}{University of Minho}{}{October 2016 -- April 2022}
+
+	\begin{cvsection}{Employment}
+ 		\begin{cvsubsection}{Channable}{Utrecht, Netherlands}{February 2023 -- Current}
+			DevOps Engineer
 			\begin{itemize}
-                \item Master’s in Software Engineering (specialized in Computer Graphics and Parallel \& Distributed Computing)
-                \item Bachelor's in Software Engineering
+                \item Managed infrastructure on GCP, includes virtual machines, Cloud SQL databases, and Cloud Storage. 
+                \item Ensured system stability and reliability by maintaining Nix for declarative, reproducible system configurations, while simultaneously automating infrastructure provisioning and configuration using a combination of Infrastructure as Code (IaC) tools such as Terraform and Ansible. This integration led to heightened efficiency and a reduction in manual errors.
+                \item Deployed custom Prometheus exporters and Grafana dashboards to monitor application performance metrics and resource utilization.
+                \item Developed a comprehensive disaster recovery plan encompassing backup and restoration procedures, failover mechanisms, and business continuity strategies, ensuring minimal disruption in the event of system failures or disasters.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Bsolus}{Braga, Portugal}{October 2020 -- November 2022}
+			Software Engineer
+			\begin{itemize}
+                \item Architected a Marketing Automation platform based on \href{https://repositorium.sdum.uminho.pt/handle/1822/80045}{\underline{state-of-the-art}} micro-service patterns, implemented the system using NestJs, MongoDB, and Docker.
+                \item Developed the CI/CD pipeline, creates a docker image in BitBucket and deploys it to GCP.
+                \item Created an abstraction layer for Jest to reduce developer workload and simplified integration tests.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
- 
-	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Bsolus}{}{October 2020 -- November 2021}
-			Software Engineer
+
+    \begin{cvsection}{Education}
+		\begin{cvsubsection}{University of Minho}{Braga, Portugal}{October 2016 -- April 2022}
 			\begin{itemize}
-                \item Architected a Marketing Automation platform based on \href{https://repositorium.sdum.uminho.pt/handle/1822/80045}{\underline{state-of-the-art}} micro-service patterns
-                \item Created CI to static analyze, format, and test the committed code
-                \item Developed CD to create a docker image with BitBucket Pipelines and deploy it on GCP
-                \item Implemented the system using NestJs, MongoDB, and Docker      
-                \item Built layer on top of Jest to reduce workload associated with the development unit and integration tests
+                \item Master’s in Software Engineering (specialized in Computer Graphics and Parallel \& Distributed Computing)
+                \item Bachelor's in Software Engineering
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -46,30 +55,11 @@
 			\begin{itemize}
 				\item \href{https://github.com/alves-luis/sdb-zulip_deployment}{\textbf{Zulip}} [Ansible, GCP, Docker]
                     \begin{itemize}
-                        \item Deployed Zulip on the GCP with Docker-swarm and ansible
+                        \item Deployed Zulip on the GCP with Docker-swarm and Ansible
                         \item Configured System monitorization with the ELK stack
                         \item Load tested the deployment with JMeter
                         
                     \end{itemize}
-				\item \href{https://github.com/goncalves-diogo/PathTracer}{\textbf{Ray tracer}} [C++, CMake]
-                    \begin{itemize}
-                        \item Developed a simple Ray tracing based renderer
-                        \item Optimized the solution by implementing Russian Roulette and BBVH
-                        \item Decreased render time by creating a per-row thread render
-                    \end{itemize}	
-		        \item \href{https://github.com/maacarvalho/interactive-wind}{\textbf{Interactive Wind}} [GLSL]
-                  \begin{itemize}
-                      \item Developed a real-time heuristic wind simulation tested on a procedurally generated grass field
-                      \item Simulated the wind effect by applying the Navier-Stokes equations
-                      \item Implemented obstacles interaction with the voxelization of the objects
-                  \end{itemize}
-                \item \href{https://github.com/maacarvalho/procedural-terrain-generation}{\textbf{Procedural Terrain Generation}} [GLSL]
-                \begin{itemize}
-                    \item Developed a real-time procedural terrain generator using simplex noise
-                    \item Implemented tessellation detail levels dependent on camera position to increase realism and performance
-                    \item Developed a semi-random terrain height system utilizing simplex noise
-                \end{itemize}                
-                
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -77,10 +67,10 @@
 	\begin{cvsection}{Skills}
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item \textbf{Programming Languages} C++; C; Python; Typescript; Bash;
-				\item \textbf{Frameworks} OpenGL; Jest; NestJS;
-				\item \textbf{Developer Tools} Git; Ansible; Agile; Jira; Docker; Postman; Confluence;
-			    \item \textbf{Languages} English (C1 level), Portuguese (Native)
+				\item \textbf{Programming Languages}: Python, C++, C, Typescript, Haskell, Nix, Bash;
+				\item \textbf{Software}: Prometheus, Grafana, Alert Manager, Docker, PostgreSQL;
+				\item \textbf{Tools}: Git, Github, Ansible, Agile, Jira, Docker, Postman, Confluence;
+			    \item \textbf{Languages} English (C2 level), Portuguese (Native);
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -93,4 +83,3 @@
 		\end{cvsubsection}
 	\end{cvsection}
 \end{document}
-
